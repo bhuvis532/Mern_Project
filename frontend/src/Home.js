@@ -10,45 +10,36 @@ import img7 from "./img7.jpg";
 import img6 from "./download.jpg";
 
 function Home() {
-
   return (
-
     <div>
-
       {/* NAVBAR */}
 
       <nav className="navbar">
-
         <h2 className="logo">DoctorCare</h2>
 
         <ul>
-
-          <li><a href="#">Home</a></li>
-
-          <li><a href="#doctors">Doctors</a></li>
-
-          <li><Link to="/appointment">Appointment</Link></li>
-
-          <li><Link to="/">Login</Link></li>
-
+          <li>
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <a href="#doctors">Doctors</a>
+          </li>
+          <li>
+            <Link to="/appointment">Appointment</Link>
+          </li>
+          <li>
+            <Link to="/">Login</Link>
+          </li>
         </ul>
-
       </nav>
 
-
-
       <div className="banner">
-
-        <img
-          src={img7}
-          alt="doctor banner"
-        />
-
+        <img src={img7} alt="doctor banner" />
       </div>
 
-
-
-      <h2 className="title" id="doctors">Our Doctors</h2>
+      <h2 className="title" id="doctors">
+        Our Doctors
+      </h2>
 
       <div class="row row-cols-3 row-cols-md-3 g-6 mx-5">
         <div class="col">
@@ -128,32 +119,22 @@ function Home() {
             </div>
           </div>
         </div>
-
       </div>
 
       {/* FOOTER */}
 
       <footer className="footer">
-
-
         <div className="icons">
-
           <FaInstagram />
           <FaTwitter />
           <FaWhatsapp />
           <FaFacebook />
-
         </div>
 
         <p>© 2026 DoctorCare. All Rights Reserved.</p>
-
-
       </footer>
-
     </div>
-
   );
-
 }
 
 export default Home;
